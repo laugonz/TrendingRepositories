@@ -15,6 +15,7 @@ final class RepositoriesViewController: UIViewController {
             tableView.register(RepositoryTableViewCell.self)
         }
     }
+    @IBOutlet weak var errorLabel: Label!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     var viewModel: RepositoriesViewModelProtocol!
@@ -36,6 +37,7 @@ final class RepositoriesViewController: UIViewController {
     private func setupBindings() {
         viewModel.repositoriesDidChange = { [weak self] in
             DispatchQueue.main.async {
+                self?.errorLabel.isHidden = true
                 self?.tableView.isHidden = false
                 self?.tableView.reloadData()
             }
@@ -43,6 +45,7 @@ final class RepositoriesViewController: UIViewController {
 
         viewModel.activityIndicatorDidChange = { [weak self] visible in
             DispatchQueue.main.async {
+                self?.errorLabel.isHidden = true
                 visible ? self?.activityIndicator.startAnimating() : self?.activityIndicator.stopAnimating()
             }
         }
@@ -50,6 +53,14 @@ final class RepositoriesViewController: UIViewController {
         viewModel.titleDidChange = { [weak self] text in
             DispatchQueue.main.async {
                 self?.title = text
+            }
+        }
+
+        viewModel.errorDidChange = { [weak self] text in
+            DispatchQueue.main.async {
+                self?.tableView.isHidden = true
+                self?.errorLabel.text = text
+                self?.errorLabel.isHidden = false
             }
         }
     }

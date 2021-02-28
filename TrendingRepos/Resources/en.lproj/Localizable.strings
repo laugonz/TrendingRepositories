@@ -14,3 +14,4 @@
 "go_to_web" = "Go to Xapo";
 "privacy" = "Privacy policy";
 "terms" = "Terms of use";
+"general_error" = "We could not fetch the repositories";

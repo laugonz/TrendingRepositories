@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoriesViewController" customModule="TrendingRepos" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="mg2-aR-0h8" id="8Lu-OT-hLi"/>
+                <outlet property="errorLabel" destination="ueS-3r-0Qy" id="03Z-d3-3U2"/>
                 <outlet property="tableView" destination="nBY-v2-D31" id="I8O-xy-30u"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,6 +21,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueS-3r-0Qy" customClass="BodyBoldWhiteLabel" customModule="TrendingRepos" customModuleProvider="target">
+                    <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nBY-v2-D31">
                     <rect key="frame" x="0.0" y="8" width="375" height="659"/>
                     <color key="backgroundColor" red="0.1333333333" green="0.1647058824" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,9 +51,11 @@
                 <constraint firstItem="nBY-v2-D31" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5U9-cc-tW1"/>
                 <constraint firstItem="nBY-v2-D31" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="5jB-Cv-qhf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nBY-v2-D31" secondAttribute="trailing" id="5tQ-0d-Lit"/>
+                <constraint firstItem="ueS-3r-0Qy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OAh-1I-csY"/>
                 <constraint firstItem="mg2-aR-0h8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SN0-z4-axW"/>
                 <constraint firstItem="mg2-aR-0h8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="aul-PV-UJ3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nBY-v2-D31" secondAttribute="bottom" id="xB0-ID-jEe"/>
+                <constraint firstItem="ueS-3r-0Qy" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yIW-18-SAc"/>
             </constraints>
             <point key="canvasLocation" x="-196" y="107"/>
         </view>

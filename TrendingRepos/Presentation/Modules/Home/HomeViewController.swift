@@ -32,17 +32,12 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupBindings()
         viewModel.viewReady()
-
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
-        if self.view.bounds.height < 828 {
-            logoTopConstraint.constant = 28
-        } else {
-            logoTopConstraint.constant = 120
-        }
+        setupByDevice()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -50,7 +45,19 @@ final class HomeViewController: UIViewController {
         animateButton()
     }
 
+    private func setupByDevice() {
+        if self.view.bounds.height < 828 {
+            logoTopConstraint.constant = 28
+        } else {
+            logoTopConstraint.constant = 120
+        }
+    }
+
     private func animateButton() {
+        guard enterButtonBottomConstraint.constant != 16 else {
+            return
+        }
+
         enterButtonBottomConstraint.constant = 16
         enterButtonHeightConstraint.constant = 60
 
