@@ -11,6 +11,12 @@ import Foundation
 protocol HomeViewModelProtocol {
     func viewReady()
     func didTapEnter()
+
+    var titleDidChange: ((String) -> Void)? { get set }
+    var bodyDidChange: ((String) -> Void)? { get set }
+    var buttonDidChange: ((String) -> Void)? { get set }
+    var termsDidChange: ((NSAttributedString) -> Void)? { get set }
+    var webDidChange: ((String) -> Void)? { get set }
 }
 
 protocol HomeRouterProtocol {

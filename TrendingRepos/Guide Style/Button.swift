@@ -77,6 +77,8 @@ class Button: UIButton {
             backgroundColor = normalBackgroundColor
             layer.borderColor = normalBorderColor?.cgColor
         }
+
+        //contentEdgeInsets = UIEdgeInsets(top: 8, left: 44, bottom: 8, right: 44)
     }
 }
 

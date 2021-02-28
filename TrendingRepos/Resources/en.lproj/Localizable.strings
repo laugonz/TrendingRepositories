@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  TrendingRepos
+
+  Created by Laura González on 28/02/2021.
+  
+*/
+
+"enter" = "Enter the app";
+"welcome" = "Welcome to iOS Test";
+"welcome_body" = "iOS Test for Xapo bank \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.";
+"repositories" = "Trending Repositories";
+"privacy_and_terms" = "Privacy policy and Terms of use";
+"go_to_web" = "Go to Xapo";
+"privacy" = "Privacy policy";
+"terms" = "Terms of use";

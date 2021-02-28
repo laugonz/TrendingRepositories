@@ -15,6 +15,7 @@ final class RepositoriesViewController: UIViewController {
             tableView.register(RepositoryTableViewCell.self)
         }
     }
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     var viewModel: RepositoriesViewModelProtocol!
 
@@ -37,6 +38,18 @@ final class RepositoriesViewController: UIViewController {
             DispatchQueue.main.async {
                 self?.tableView.isHidden = false
                 self?.tableView.reloadData()
+            }
+        }
+
+        viewModel.activityIndicatorDidChange = { [weak self] visible in
+            DispatchQueue.main.async {
+                visible ? self?.activityIndicator.startAnimating() : self?.activityIndicator.stopAnimating()
+            }
+        }
+
+        viewModel.titleDidChange = { [weak self] text in
+            DispatchQueue.main.async {
+                self?.title = text
             }
         }
     }

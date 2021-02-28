@@ -44,6 +44,9 @@
 		D3B1874F25EBE63F0071BE55 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1874E25EBE63F0071BE55 /* Button.swift */; };
 		D3B1875425EBE6970071BE55 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1875325EBE6970071BE55 /* Colors.swift */; };
 		D3B1875925EBE7E50071BE55 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1875825EBE7E50071BE55 /* Label.swift */; };
+		D3B1877625EC17D80071BE55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3B1877825EC17D80071BE55 /* Localizable.strings */; };
+		D3B1878325EC1B820071BE55 /* NSAttributedString+Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1878225EC1B820071BE55 /* NSAttributedString+Links.swift */; };
+		D3B1878825EC20330071BE55 /* NavigationBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1878725EC20330071BE55 /* NavigationBarAppearance.swift */; };
 		D3D9256C25E68094009710EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256B25E68094009710EC /* AppDelegate.swift */; };
 		D3D9256E25E68094009710EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256D25E68094009710EC /* SceneDelegate.swift */; };
 		D3D9257025E68094009710EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256F25E68094009710EC /* ViewController.swift */; };
@@ -109,6 +112,9 @@
 		D3B1874E25EBE63F0071BE55 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		D3B1875325EBE6970071BE55 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D3B1875825EBE7E50071BE55 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		D3B1877725EC17D80071BE55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3B1878225EC1B820071BE55 /* NSAttributedString+Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Links.swift"; sourceTree = "<group>"; };
+		D3B1878725EC20330071BE55 /* NavigationBarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearance.swift; sourceTree = "<group>"; };
 		D3D9256825E68094009710EC /* TrendingRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D9256B25E68094009710EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D9256D25E68094009710EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +171,7 @@
 			children = (
 				D3D9257125E68094009710EC /* Main.storyboard */,
 				D3D9257425E68096009710EC /* Assets.xcassets */,
+				D3B1877825EC17D80071BE55 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -282,6 +289,7 @@
 				D3B186DB25EBBB520071BE55 /* URL+Parameter.swift */,
 				D3B1871825EBD1760071BE55 /* String+Localized.swift */,
 				D3B1873325EBDB4B0071BE55 /* UITableView+Reusable.swift */,
+				D3B1878225EC1B820071BE55 /* NSAttributedString+Links.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -319,6 +327,7 @@
 			children = (
 				D3B1872925EBD6470071BE55 /* ReusableView.swift */,
 				D3B1872E25EBD6690071BE55 /* NibLoadableView.swift */,
+				D3B1878725EC20330071BE55 /* NavigationBarAppearance.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -507,6 +516,7 @@
 				D3D9257525E68096009710EC /* Assets.xcassets in Resources */,
 				D3B186CE25EBB8680071BE55 /* RepositoriesViewController.xib in Resources */,
 				D3B1872125EBD60B0071BE55 /* RepositoryTableViewCell.xib in Resources */,
+				D3B1877625EC17D80071BE55 /* Localizable.strings in Resources */,
 				D3D9257325E68094009710EC /* Main.storyboard in Resources */,
 				D3B186AC25EBB6E30071BE55 /* HomeViewController.xib in Resources */,
 			);
@@ -535,6 +545,7 @@
 			files = (
 				D3B186CA25EBB8680071BE55 /* RepositoriesViewController.swift in Sources */,
 				D3B186AB25EBB6E30071BE55 /* HomeViewModel.swift in Sources */,
+				D3B1878325EC1B820071BE55 /* NSAttributedString+Links.swift in Sources */,
 				D3D9257025E68094009710EC /* ViewController.swift in Sources */,
 				D3B186CC25EBB8680071BE55 /* RepositoriesBuilder.swift in Sources */,
 				D3B186A625EBB6E30071BE55 /* HomeRouter.swift in Sources */,
@@ -567,6 +578,7 @@
 				D3B1872025EBD60B0071BE55 /* RepositoryTableViewCell.swift in Sources */,
 				D3B1875425EBE6970071BE55 /* Colors.swift in Sources */,
 				D3B1870525EBC5580071BE55 /* RepositoriesRepository.swift in Sources */,
+				D3B1878825EC20330071BE55 /* NavigationBarAppearance.swift in Sources */,
 				D3B1874425EBDFD80071BE55 /* RepositoryDetailBuilder.swift in Sources */,
 				D3B1874F25EBE63F0071BE55 /* Button.swift in Sources */,
 			);
@@ -604,6 +616,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D3B1877825EC17D80071BE55 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3B1877725EC17D80071BE55 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D3D9257125E68094009710EC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -674,7 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -729,7 +749,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -18,6 +18,7 @@ protocol RepositoriesViewModelProtocol {
     var activityIndicatorDidChange: ((Bool) -> Void)? { get set }
     var repositoriesDidChange: (() -> Void)? { get set }
     var errorDidChange: ((String) -> Void)? { get set }
+    var titleDidChange: ((String) -> Void)? { get set } 
 }
 
 protocol RepositoriesRouterProtocol {

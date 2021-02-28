@@ -19,6 +19,11 @@ class RepositoryTableViewCell: UITableViewCell {
     @IBOutlet weak var starsLabel: UILabel!
     @IBOutlet weak var forksLabel: UILabel!
 
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        super.setHighlighted(highlighted, animated: animated)
+        contentView.backgroundColor = highlighted ? UIColor.lightGray : UIColor.clear
+    }
+
     func display(_ viewModel: RepositoryCellViewModel) {
         nameLabel.text = viewModel.name
         starsLabel.text = viewModel.stars

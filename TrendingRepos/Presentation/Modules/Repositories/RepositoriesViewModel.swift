@@ -14,6 +14,7 @@ final class RepositoriesViewModel {
     private var fetchTrendingRepositoriesUseCase: FetchTrendingRepositoriesUseCaseProtocol
 
     var activityIndicatorDidChange: ((Bool) -> Void)?
+    var titleDidChange: ((String) -> Void)?
     var repositoriesDidChange: (() -> Void)?
     var errorDidChange: ((String) -> Void)?
 
@@ -55,6 +56,8 @@ final class RepositoriesViewModel {
 extension RepositoriesViewModel: RepositoriesViewModelProtocol {
     func viewReady() {
         fetchTrendingRepositories()
+
+        titleDidChange?("repositories".localized())
     }
 
     func numberOfItems() -> Int {
