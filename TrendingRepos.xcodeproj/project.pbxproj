@@ -41,6 +41,9 @@
 		D3B1874425EBDFD80071BE55 /* RepositoryDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1873D25EBDFD80071BE55 /* RepositoryDetailBuilder.swift */; };
 		D3B1874525EBDFD80071BE55 /* RepositoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1873E25EBDFD80071BE55 /* RepositoryDetailViewModel.swift */; };
 		D3B1874625EBDFD80071BE55 /* RepositoryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B1873F25EBDFD80071BE55 /* RepositoryDetailViewController.xib */; };
+		D3B1874F25EBE63F0071BE55 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1874E25EBE63F0071BE55 /* Button.swift */; };
+		D3B1875425EBE6970071BE55 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1875325EBE6970071BE55 /* Colors.swift */; };
+		D3B1875925EBE7E50071BE55 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1875825EBE7E50071BE55 /* Label.swift */; };
 		D3D9256C25E68094009710EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256B25E68094009710EC /* AppDelegate.swift */; };
 		D3D9256E25E68094009710EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256D25E68094009710EC /* SceneDelegate.swift */; };
 		D3D9257025E68094009710EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256F25E68094009710EC /* ViewController.swift */; };
@@ -103,6 +106,9 @@
 		D3B1873D25EBDFD80071BE55 /* RepositoryDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailBuilder.swift; sourceTree = "<group>"; };
 		D3B1873E25EBDFD80071BE55 /* RepositoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewModel.swift; sourceTree = "<group>"; };
 		D3B1873F25EBDFD80071BE55 /* RepositoryDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryDetailViewController.xib; sourceTree = "<group>"; };
+		D3B1874E25EBE63F0071BE55 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		D3B1875325EBE6970071BE55 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D3B1875825EBE7E50071BE55 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		D3D9256825E68094009710EC /* TrendingRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D9256B25E68094009710EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D9256D25E68094009710EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -329,6 +335,16 @@
 			path = "Repository Detail";
 			sourceTree = "<group>";
 		};
+		D3B1874D25EBE58E0071BE55 /* Guide Style */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1874E25EBE63F0071BE55 /* Button.swift */,
+				D3B1875325EBE6970071BE55 /* Colors.swift */,
+				D3B1875825EBE7E50071BE55 /* Label.swift */,
+			);
+			path = "Guide Style";
+			sourceTree = "<group>";
+		};
 		D3D9255F25E68094009710EC = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +373,7 @@
 				D3B1869725EBB6410071BE55 /* Domain */,
 				D3B1869325EBB59B0071BE55 /* Presentation */,
 				D3B1869425EBB5A70071BE55 /* Resources */,
+				D3B1874D25EBE58E0071BE55 /* Guide Style */,
 				D3D9256F25E68094009710EC /* ViewController.swift */,
 				D3D9257125E68094009710EC /* Main.storyboard */,
 				D3D9257925E68096009710EC /* Info.plist */,
@@ -530,6 +547,7 @@
 				D3B1874025EBDFD80071BE55 /* RepositoryDetailRouter.swift in Sources */,
 				D3B186CD25EBB8680071BE55 /* RepositoriesViewModel.swift in Sources */,
 				D3B1872F25EBD6690071BE55 /* NibLoadableView.swift in Sources */,
+				D3B1875925EBE7E50071BE55 /* Label.swift in Sources */,
 				D3B186F225EBC1CF0071BE55 /* RepositoryNetworkDTO.swift in Sources */,
 				D3B1870F25EBCE0A0071BE55 /* RepositoriesUseCase.swift in Sources */,
 				D3B186A925EBB6E30071BE55 /* HomeProtocols.swift in Sources */,
@@ -547,8 +565,10 @@
 				D3B186E725EBBFA70071BE55 /* NetworkConstants.swift in Sources */,
 				D3B186DC25EBBB520071BE55 /* URL+Parameter.swift in Sources */,
 				D3B1872025EBD60B0071BE55 /* RepositoryTableViewCell.swift in Sources */,
+				D3B1875425EBE6970071BE55 /* Colors.swift in Sources */,
 				D3B1870525EBC5580071BE55 /* RepositoriesRepository.swift in Sources */,
 				D3B1874425EBDFD80071BE55 /* RepositoryDetailBuilder.swift in Sources */,
+				D3B1874F25EBE63F0071BE55 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

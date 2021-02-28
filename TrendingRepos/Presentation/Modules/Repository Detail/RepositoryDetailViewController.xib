@@ -4,16 +4,15 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoryDetailViewController" customModule="TrendingRepos" customModuleProvider="target">
             <connections>
-                <outlet property="descriptionLabel" destination="5RZ-G0-jME" id="rNI-MM-KYv"/>
-                <outlet property="forksLabel" destination="Oat-h0-RzI" id="LEu-WS-Rst"/>
+                <outlet property="descriptionLabel" destination="5RZ-G0-jME" id="F1Z-fk-hKd"/>
+                <outlet property="forksLabel" destination="Oat-h0-RzI" id="Ysv-Wt-dNx"/>
                 <outlet property="nameLabel" destination="08C-R5-5vR" id="wdj-Qn-9MH"/>
-                <outlet property="starsLabel" destination="ZeT-1B-hm5" id="lcR-cw-flA"/>
+                <outlet property="starsLabel" destination="ZeT-1B-hm5" id="yGA-Pm-0yB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,14 +24,14 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BWY-Nh-46U">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":reponame" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08C-R5-5vR">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":reponame" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08C-R5-5vR" customClass="H1DarkGreyLabel" customModule="TrendingRepos" customModuleProvider="target">
                             <rect key="frame" x="147" y="8" width="81.5" height="20.5"/>
                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RZ-G0-jME">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RZ-G0-jME" customClass="BodyBoldDarkGreyLabel" customModule="TrendingRepos" customModuleProvider="target">
                             <rect key="frame" x="51" y="44.5" width="273.5" height="81.5"/>
                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             <string key="text">:description description description description description description description description description description description description</string>
@@ -45,13 +44,13 @@
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oMW-Kp-BPN">
                                     <rect key="frame" x="16" y="7.5" width="16" height="16"/>
-                                    <color key="tintColor" systemColor="labelColor"/>
+                                    <color key="tintColor" red="0.98823529409999999" green="0.3921568627" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="16" id="faD-Ji-Odr"/>
                                         <constraint firstAttribute="height" constant="16" id="y9U-IH-oT5"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":starscount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeT-1B-hm5">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":starscount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeT-1B-hm5" customClass="BodyRegularDarkGreyLabel" customModule="TrendingRepos" customModuleProvider="target">
                                     <rect key="frame" x="48" y="8" width="85.5" height="16"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -65,13 +64,13 @@
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuningfork" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tjf-e5-6Cr">
                                     <rect key="frame" x="16" y="8" width="16" height="16"/>
-                                    <color key="tintColor" systemColor="labelColor"/>
+                                    <color key="tintColor" red="0.98823529409999999" green="0.3921568627" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="16" id="NWY-9R-u7z"/>
                                         <constraint firstAttribute="height" constant="16" id="Veh-dq-hyk"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":forkscount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-h0-RzI">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":forkscount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-h0-RzI" customClass="BodyRegularDarkGreyLabel" customModule="TrendingRepos" customModuleProvider="target">
                                     <rect key="frame" x="48" y="8" width="86" height="16"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -97,8 +96,5 @@
     <resources>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="tuningfork" catalog="system" width="128" height="116"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
