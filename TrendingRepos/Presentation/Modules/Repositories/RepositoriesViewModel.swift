@@ -14,10 +14,12 @@ final class RepositoriesViewModel {
     private var fetchTrendingRepositoriesUseCase: FetchTrendingRepositoriesUseCaseProtocol
 
     var activityIndicatorDidChange: ((Bool) -> Void)?
-    var respositoriesDidChange: (() -> Void)?
+    var repositoriesDidChange: (() -> Void)?
     var errorDidChange: ((String) -> Void)?
 
     private var repositories = [Repository]()
+    private var repositoriesCellViewModel = [RepositoryCellViewModel]()
+
 
     required init(router: RepositoriesRouterProtocol, fetchTrendingRepositoriesUseCase: FetchTrendingRepositoriesUseCaseProtocol) {
 		self.router = router
@@ -35,7 +37,12 @@ final class RepositoriesViewModel {
             switch result {
             case .success(let repositories):
                 self.repositories = repositories
-                self.respositoriesDidChange?()
+                self.repositoriesCellViewModel = repositories.map {
+                    RepositoryCellViewModel(name: $0.owner + " " + $0.name,
+                                            stars: String($0.stars),
+                                            forks: String($0.forks))
+                }
+                self.repositoriesDidChange?()
             case .failure:
                 self.errorDidChange?("general_error".localized())
             }
@@ -51,5 +58,15 @@ extension RepositoriesViewModel: RepositoriesViewModelProtocol {
     }
 
     func viewDidAppear() {
+    }
+
+    func numberOfItems() -> Int {
+        return repositoriesCellViewModel.count
+    }
+
+    func viewModel(index: Int) -> RepositoryCellViewModel? {
+        guard index < repositoriesCellViewModel.count else { return nil }
+
+        return repositoriesCellViewModel[index]
     }
 }

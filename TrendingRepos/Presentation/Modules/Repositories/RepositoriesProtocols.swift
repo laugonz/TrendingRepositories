@@ -12,7 +12,12 @@ protocol RepositoriesViewModelProtocol {
     func viewReady()
     func viewDidAppear()
 
-    //var activityIndicatorDidChange: ((Bool) -> Void)? { get set }
+    func numberOfItems() -> Int
+    func viewModel(index: Int) -> RepositoryCellViewModel?
+
+    var activityIndicatorDidChange: ((Bool) -> Void)? { get set }
+    var repositoriesDidChange: (() -> Void)? { get set }
+    var errorDidChange: ((String) -> Void)? { get set }
 }
 
 protocol RepositoriesRouterProtocol {

@@ -10,7 +10,13 @@ import UIKit
 
 final class RepositoriesViewController: UIViewController {
 
-	var viewModel: RepositoriesViewModelProtocol!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.register(RepositoryTableViewCell.self)
+        }
+    }
+
+    var viewModel: RepositoriesViewModelProtocol!
 
 	// MARK: LifeCycle
 
@@ -27,6 +33,31 @@ final class RepositoriesViewController: UIViewController {
     }
 
     private func setupBindings() {
-        // Do bindings setup
+        viewModel.repositoriesDidChange = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.isHidden = false
+                self?.tableView.reloadData()
+            }
+        }
+    }
+}
+
+extension RepositoriesViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfItems()
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cellViewModel = viewModel.viewModel(index: indexPath.row) else {
+            return UITableViewCell()
+        }
+
+        let cell = tableView.dequeueReusableCell(RepositoryTableViewCell.self, for: indexPath)
+        cell.display(cellViewModel)
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //viewModel.didSelect(index: indexPath.row)
     }
 }

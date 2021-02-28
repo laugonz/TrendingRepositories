@@ -30,6 +30,11 @@
 		D3B1870F25EBCE0A0071BE55 /* RepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1870E25EBCE0A0071BE55 /* RepositoriesUseCase.swift */; };
 		D3B1871425EBCE3E0071BE55 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1871325EBCE3E0071BE55 /* UseCase.swift */; };
 		D3B1871925EBD1760071BE55 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1871825EBD1760071BE55 /* String+Localized.swift */; };
+		D3B1872025EBD60B0071BE55 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1871E25EBD60B0071BE55 /* RepositoryTableViewCell.swift */; };
+		D3B1872125EBD60B0071BE55 /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B1871F25EBD60B0071BE55 /* RepositoryTableViewCell.xib */; };
+		D3B1872A25EBD6470071BE55 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1872925EBD6470071BE55 /* ReusableView.swift */; };
+		D3B1872F25EBD6690071BE55 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1872E25EBD6690071BE55 /* NibLoadableView.swift */; };
+		D3B1873425EBDB4B0071BE55 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1873325EBDB4B0071BE55 /* UITableView+Reusable.swift */; };
 		D3D9256C25E68094009710EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256B25E68094009710EC /* AppDelegate.swift */; };
 		D3D9256E25E68094009710EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256D25E68094009710EC /* SceneDelegate.swift */; };
 		D3D9257025E68094009710EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256F25E68094009710EC /* ViewController.swift */; };
@@ -81,6 +86,11 @@
 		D3B1870E25EBCE0A0071BE55 /* RepositoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesUseCase.swift; sourceTree = "<group>"; };
 		D3B1871325EBCE3E0071BE55 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		D3B1871825EBD1760071BE55 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		D3B1871E25EBD60B0071BE55 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		D3B1871F25EBD60B0071BE55 /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		D3B1872925EBD6470071BE55 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		D3B1872E25EBD6690071BE55 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		D3B1873325EBDB4B0071BE55 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		D3D9256825E68094009710EC /* TrendingRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D9256B25E68094009710EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D9256D25E68094009710EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 			children = (
 				D3B1869525EBB5D70071BE55 /* App */,
 				D3B1869625EBB6360071BE55 /* Modules */,
+				D3B1872825EBD62C0071BE55 /* Views */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -234,6 +245,7 @@
 		D3B186BF25EBB80F0071BE55 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				D3B1871D25EBD5F30071BE55 /* Cell */,
 				D3B186C725EBB8680071BE55 /* RepositoriesViewController.xib */,
 				D3B186C325EBB8680071BE55 /* RepositoriesViewController.swift */,
 				D3B186C625EBB8680071BE55 /* RepositoriesViewModel.swift */,
@@ -249,6 +261,7 @@
 			children = (
 				D3B186DB25EBBB520071BE55 /* URL+Parameter.swift */,
 				D3B1871825EBD1760071BE55 /* String+Localized.swift */,
+				D3B1873325EBDB4B0071BE55 /* UITableView+Reusable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +283,24 @@
 				D3B186EC25EBC1A90071BE55 /* RepositoriesNetworkDTO.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		D3B1871D25EBD5F30071BE55 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1871E25EBD60B0071BE55 /* RepositoryTableViewCell.swift */,
+				D3B1871F25EBD60B0071BE55 /* RepositoryTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D3B1872825EBD62C0071BE55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1872925EBD6470071BE55 /* ReusableView.swift */,
+				D3B1872E25EBD6690071BE55 /* NibLoadableView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D3D9255F25E68094009710EC = {
@@ -431,6 +462,7 @@
 				D3D9257825E68096009710EC /* LaunchScreen.storyboard in Resources */,
 				D3D9257525E68096009710EC /* Assets.xcassets in Resources */,
 				D3B186CE25EBB8680071BE55 /* RepositoriesViewController.xib in Resources */,
+				D3B1872125EBD60B0071BE55 /* RepositoryTableViewCell.xib in Resources */,
 				D3D9257325E68094009710EC /* Main.storyboard in Resources */,
 				D3B186AC25EBB6E30071BE55 /* HomeViewController.xib in Resources */,
 			);
@@ -464,10 +496,12 @@
 				D3B186A625EBB6E30071BE55 /* HomeRouter.swift in Sources */,
 				D3D9256C25E68094009710EC /* AppDelegate.swift in Sources */,
 				D3B1871425EBCE3E0071BE55 /* UseCase.swift in Sources */,
+				D3B1872A25EBD6470071BE55 /* ReusableView.swift in Sources */,
 				D3B186AA25EBB6E30071BE55 /* HomeBuilder.swift in Sources */,
 				D3B186CB25EBB8680071BE55 /* RepositoriesProtocols.swift in Sources */,
 				D3B186C825EBB8680071BE55 /* RepositoriesRouter.swift in Sources */,
 				D3B186CD25EBB8680071BE55 /* RepositoriesViewModel.swift in Sources */,
+				D3B1872F25EBD6690071BE55 /* NibLoadableView.swift in Sources */,
 				D3B186F225EBC1CF0071BE55 /* RepositoryNetworkDTO.swift in Sources */,
 				D3B1870F25EBCE0A0071BE55 /* RepositoriesUseCase.swift in Sources */,
 				D3B186A925EBB6E30071BE55 /* HomeProtocols.swift in Sources */,
@@ -475,11 +509,13 @@
 				D3D9256E25E68094009710EC /* SceneDelegate.swift in Sources */,
 				D3B1870A25EBC62F0071BE55 /* Repository.swift in Sources */,
 				D3B186D625EBBB040071BE55 /* Network.swift in Sources */,
+				D3B1873425EBDB4B0071BE55 /* UITableView+Reusable.swift in Sources */,
 				D3B1871925EBD1760071BE55 /* String+Localized.swift in Sources */,
 				D3B186ED25EBC1A90071BE55 /* RepositoriesNetworkDTO.swift in Sources */,
 				D3B186A825EBB6E30071BE55 /* HomeViewController.swift in Sources */,
 				D3B186E725EBBFA70071BE55 /* NetworkConstants.swift in Sources */,
 				D3B186DC25EBBB520071BE55 /* URL+Parameter.swift in Sources */,
+				D3B1872025EBD60B0071BE55 /* RepositoryTableViewCell.swift in Sources */,
 				D3B1870525EBC5580071BE55 /* RepositoriesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
