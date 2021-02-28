@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3B186A625EBB6E30071BE55 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1869F25EBB6E30071BE55 /* HomeRouter.swift */; };
+		D3B186A825EBB6E30071BE55 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186A125EBB6E30071BE55 /* HomeViewController.swift */; };
+		D3B186A925EBB6E30071BE55 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186A225EBB6E30071BE55 /* HomeProtocols.swift */; };
+		D3B186AA25EBB6E30071BE55 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186A325EBB6E30071BE55 /* HomeBuilder.swift */; };
+		D3B186AB25EBB6E30071BE55 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186A425EBB6E30071BE55 /* HomeViewModel.swift */; };
+		D3B186AC25EBB6E30071BE55 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B186A525EBB6E30071BE55 /* HomeViewController.xib */; };
+		D3B186C825EBB8680071BE55 /* RepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186C125EBB8680071BE55 /* RepositoriesRouter.swift */; };
+		D3B186CA25EBB8680071BE55 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186C325EBB8680071BE55 /* RepositoriesViewController.swift */; };
+		D3B186CB25EBB8680071BE55 /* RepositoriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186C425EBB8680071BE55 /* RepositoriesProtocols.swift */; };
+		D3B186CC25EBB8680071BE55 /* RepositoriesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186C525EBB8680071BE55 /* RepositoriesBuilder.swift */; };
+		D3B186CD25EBB8680071BE55 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186C625EBB8680071BE55 /* RepositoriesViewModel.swift */; };
+		D3B186CE25EBB8680071BE55 /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B186C725EBB8680071BE55 /* RepositoriesViewController.xib */; };
+		D3B186D625EBBB040071BE55 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186D525EBBB040071BE55 /* Network.swift */; };
+		D3B186DC25EBBB520071BE55 /* URL+Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186DB25EBBB520071BE55 /* URL+Parameter.swift */; };
+		D3B186E225EBBED70071BE55 /* RepositoriesNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186E125EBBED70071BE55 /* RepositoriesNetworkClient.swift */; };
+		D3B186E725EBBFA70071BE55 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186E625EBBFA70071BE55 /* NetworkConstants.swift */; };
+		D3B186ED25EBC1A90071BE55 /* RepositoriesNetworkDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186EC25EBC1A90071BE55 /* RepositoriesNetworkDTO.swift */; };
+		D3B186F225EBC1CF0071BE55 /* RepositoryNetworkDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B186F125EBC1CF0071BE55 /* RepositoryNetworkDTO.swift */; };
+		D3B1870525EBC5580071BE55 /* RepositoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1870425EBC5580071BE55 /* RepositoriesRepository.swift */; };
+		D3B1870A25EBC62F0071BE55 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1870925EBC62F0071BE55 /* Repository.swift */; };
+		D3B1870F25EBCE0A0071BE55 /* RepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1870E25EBCE0A0071BE55 /* RepositoriesUseCase.swift */; };
+		D3B1871425EBCE3E0071BE55 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1871325EBCE3E0071BE55 /* UseCase.swift */; };
+		D3B1871925EBD1760071BE55 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1871825EBD1760071BE55 /* String+Localized.swift */; };
 		D3D9256C25E68094009710EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256B25E68094009710EC /* AppDelegate.swift */; };
 		D3D9256E25E68094009710EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256D25E68094009710EC /* SceneDelegate.swift */; };
 		D3D9257025E68094009710EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256F25E68094009710EC /* ViewController.swift */; };
@@ -35,6 +58,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3B1869F25EBB6E30071BE55 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		D3B186A125EBB6E30071BE55 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D3B186A225EBB6E30071BE55 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		D3B186A325EBB6E30071BE55 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		D3B186A425EBB6E30071BE55 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D3B186A525EBB6E30071BE55 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D3B186C125EBB8680071BE55 /* RepositoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRouter.swift; sourceTree = "<group>"; };
+		D3B186C325EBB8680071BE55 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		D3B186C425EBB8680071BE55 /* RepositoriesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesProtocols.swift; sourceTree = "<group>"; };
+		D3B186C525EBB8680071BE55 /* RepositoriesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesBuilder.swift; sourceTree = "<group>"; };
+		D3B186C625EBB8680071BE55 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		D3B186C725EBB8680071BE55 /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
+		D3B186D525EBBB040071BE55 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		D3B186DB25EBBB520071BE55 /* URL+Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Parameter.swift"; sourceTree = "<group>"; };
+		D3B186E125EBBED70071BE55 /* RepositoriesNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesNetworkClient.swift; sourceTree = "<group>"; };
+		D3B186E625EBBFA70071BE55 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		D3B186EC25EBC1A90071BE55 /* RepositoriesNetworkDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesNetworkDTO.swift; sourceTree = "<group>"; };
+		D3B186F125EBC1CF0071BE55 /* RepositoryNetworkDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryNetworkDTO.swift; sourceTree = "<group>"; };
+		D3B1870425EBC5580071BE55 /* RepositoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRepository.swift; sourceTree = "<group>"; };
+		D3B1870925EBC62F0071BE55 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		D3B1870E25EBCE0A0071BE55 /* RepositoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesUseCase.swift; sourceTree = "<group>"; };
+		D3B1871325EBCE3E0071BE55 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		D3B1871825EBD1760071BE55 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		D3D9256825E68094009710EC /* TrendingRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D9256B25E68094009710EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D9256D25E68094009710EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +122,156 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3B1869325EBB59B0071BE55 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1869525EBB5D70071BE55 /* App */,
+				D3B1869625EBB6360071BE55 /* Modules */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D3B1869425EBB5A70071BE55 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3D9257425E68096009710EC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3B1869525EBB5D70071BE55 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D3D9256B25E68094009710EC /* AppDelegate.swift */,
+				D3D9256D25E68094009710EC /* SceneDelegate.swift */,
+				D3D9257625E68096009710EC /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D3B1869625EBB6360071BE55 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D3B186BF25EBB80F0071BE55 /* Repositories */,
+				D3B1869E25EBB6D20071BE55 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D3B1869725EBB6410071BE55 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1869825EBB6610071BE55 /* Entities */,
+				D3B1869A25EBB6900071BE55 /* DTO */,
+				D3B1869925EBB66A0071BE55 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D3B1869825EBB6610071BE55 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1870925EBC62F0071BE55 /* Repository.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D3B1869925EBB66A0071BE55 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1871325EBCE3E0071BE55 /* UseCase.swift */,
+				D3B1870E25EBCE0A0071BE55 /* RepositoriesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		D3B1869A25EBB6900071BE55 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				D3B186EB25EBC1840071BE55 /* Repository */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		D3B1869B25EBB6A90071BE55 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D3B186E025EBBEBF0071BE55 /* Network */,
+				D3B1869C25EBB6B10071BE55 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D3B1869C25EBB6B10071BE55 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1870425EBC5580071BE55 /* RepositoriesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D3B1869D25EBB6B90071BE55 /* Network Clients */ = {
+			isa = PBXGroup;
+			children = (
+				D3B186E125EBBED70071BE55 /* RepositoriesNetworkClient.swift */,
+			);
+			path = "Network Clients";
+			sourceTree = "<group>";
+		};
+		D3B1869E25EBB6D20071BE55 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D3B186A525EBB6E30071BE55 /* HomeViewController.xib */,
+				D3B186A125EBB6E30071BE55 /* HomeViewController.swift */,
+				D3B186A425EBB6E30071BE55 /* HomeViewModel.swift */,
+				D3B1869F25EBB6E30071BE55 /* HomeRouter.swift */,
+				D3B186A325EBB6E30071BE55 /* HomeBuilder.swift */,
+				D3B186A225EBB6E30071BE55 /* HomeProtocols.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D3B186BF25EBB80F0071BE55 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D3B186C725EBB8680071BE55 /* RepositoriesViewController.xib */,
+				D3B186C325EBB8680071BE55 /* RepositoriesViewController.swift */,
+				D3B186C625EBB8680071BE55 /* RepositoriesViewModel.swift */,
+				D3B186C125EBB8680071BE55 /* RepositoriesRouter.swift */,
+				D3B186C425EBB8680071BE55 /* RepositoriesProtocols.swift */,
+				D3B186C525EBB8680071BE55 /* RepositoriesBuilder.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D3B186DA25EBBB440071BE55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3B186DB25EBBB520071BE55 /* URL+Parameter.swift */,
+				D3B1871825EBD1760071BE55 /* String+Localized.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D3B186E025EBBEBF0071BE55 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D3B186D525EBBB040071BE55 /* Network.swift */,
+				D3B186E625EBBFA70071BE55 /* NetworkConstants.swift */,
+				D3B1869D25EBB6B90071BE55 /* Network Clients */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D3B186EB25EBC1840071BE55 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D3B186F125EBC1CF0071BE55 /* RepositoryNetworkDTO.swift */,
+				D3B186EC25EBC1A90071BE55 /* RepositoriesNetworkDTO.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		D3D9255F25E68094009710EC = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +295,13 @@
 		D3D9256A25E68094009710EC /* TrendingRepos */ = {
 			isa = PBXGroup;
 			children = (
-				D3D9256B25E68094009710EC /* AppDelegate.swift */,
-				D3D9256D25E68094009710EC /* SceneDelegate.swift */,
+				D3B186DA25EBBB440071BE55 /* Extensions */,
+				D3B1869B25EBB6A90071BE55 /* Data */,
+				D3B1869725EBB6410071BE55 /* Domain */,
+				D3B1869325EBB59B0071BE55 /* Presentation */,
+				D3B1869425EBB5A70071BE55 /* Resources */,
 				D3D9256F25E68094009710EC /* ViewController.swift */,
 				D3D9257125E68094009710EC /* Main.storyboard */,
-				D3D9257425E68096009710EC /* Assets.xcassets */,
-				D3D9257625E68096009710EC /* LaunchScreen.storyboard */,
 				D3D9257925E68096009710EC /* Info.plist */,
 			);
 			path = TrendingRepos;
@@ -233,7 +430,9 @@
 			files = (
 				D3D9257825E68096009710EC /* LaunchScreen.storyboard in Resources */,
 				D3D9257525E68096009710EC /* Assets.xcassets in Resources */,
+				D3B186CE25EBB8680071BE55 /* RepositoriesViewController.xib in Resources */,
 				D3D9257325E68094009710EC /* Main.storyboard in Resources */,
+				D3B186AC25EBB6E30071BE55 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +457,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B186CA25EBB8680071BE55 /* RepositoriesViewController.swift in Sources */,
+				D3B186AB25EBB6E30071BE55 /* HomeViewModel.swift in Sources */,
 				D3D9257025E68094009710EC /* ViewController.swift in Sources */,
+				D3B186CC25EBB8680071BE55 /* RepositoriesBuilder.swift in Sources */,
+				D3B186A625EBB6E30071BE55 /* HomeRouter.swift in Sources */,
 				D3D9256C25E68094009710EC /* AppDelegate.swift in Sources */,
+				D3B1871425EBCE3E0071BE55 /* UseCase.swift in Sources */,
+				D3B186AA25EBB6E30071BE55 /* HomeBuilder.swift in Sources */,
+				D3B186CB25EBB8680071BE55 /* RepositoriesProtocols.swift in Sources */,
+				D3B186C825EBB8680071BE55 /* RepositoriesRouter.swift in Sources */,
+				D3B186CD25EBB8680071BE55 /* RepositoriesViewModel.swift in Sources */,
+				D3B186F225EBC1CF0071BE55 /* RepositoryNetworkDTO.swift in Sources */,
+				D3B1870F25EBCE0A0071BE55 /* RepositoriesUseCase.swift in Sources */,
+				D3B186A925EBB6E30071BE55 /* HomeProtocols.swift in Sources */,
+				D3B186E225EBBED70071BE55 /* RepositoriesNetworkClient.swift in Sources */,
 				D3D9256E25E68094009710EC /* SceneDelegate.swift in Sources */,
+				D3B1870A25EBC62F0071BE55 /* Repository.swift in Sources */,
+				D3B186D625EBBB040071BE55 /* Network.swift in Sources */,
+				D3B1871925EBD1760071BE55 /* String+Localized.swift in Sources */,
+				D3B186ED25EBC1A90071BE55 /* RepositoriesNetworkDTO.swift in Sources */,
+				D3B186A825EBB6E30071BE55 /* HomeViewController.swift in Sources */,
+				D3B186E725EBBFA70071BE55 /* NetworkConstants.swift in Sources */,
+				D3B186DC25EBBB520071BE55 /* URL+Parameter.swift in Sources */,
+				D3B1870525EBC5580071BE55 /* RepositoriesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

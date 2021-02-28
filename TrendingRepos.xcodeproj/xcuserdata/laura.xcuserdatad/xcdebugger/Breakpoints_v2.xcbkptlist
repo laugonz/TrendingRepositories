@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7049719E-6C43-4415-8268-1C2EF2D094D2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B51C33C-43C1-47D8-95EC-2A2853BB42A7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendingRepos/Presentation/Modules/Repositories/RepositoriesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchTrendingRepositories()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52F42747-CAFF-42B6-B6B5-A94E8467C40C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendingRepos/Data/Network/Network Clients/RepositoriesNetworkClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getTrendingRepositories(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3FD12559-8D8A-401D-95D1-D38E5FEA7CD0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendingRepos/Data/Repositories/RepositoriesRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchRepositories(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3FD12559-8D8A-401D-95D1-D38E5FEA7CD0 - c5df6c475dccb7a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TrendingRepos.RepositoriesNetworkDTO, TrendingRepos.NetworkError&gt;) -&gt; () in TrendingRepos.RepositoriesRepository.fetchRepositories(completion: (Swift.Result&lt;Swift.Array&lt;TrendingRepos.Repository&gt;, TrendingRepos.RepoError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TrendingRepos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laura/Documents/Laura/Dev/TrendingRepos/TrendingRepos/Data/Repositories/RepositoriesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "226">
+               </Location>
+               <Location
+                  uuid = "3FD12559-8D8A-401D-95D1-D38E5FEA7CD0 - c5df6c475dccb7a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TrendingRepos.RepositoriesNetworkDTO, TrendingRepos.NetworkError&gt;) -&gt; () in TrendingRepos.RepositoriesRepository.fetchRepositories(completion: (Swift.Result&lt;Swift.Array&lt;TrendingRepos.Repository&gt;, TrendingRepos.RepoError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TrendingRepos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laura/Documents/Laura/Dev/TrendingRepos/TrendingRepos/Data/Repositories/RepositoriesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "247">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B73C6ED-8203-41FE-A681-3DBB2EE2B08F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendingRepos/Domain/UseCases/RepositoriesUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "execute()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4B73C6ED-8203-41FE-A681-3DBB2EE2B08F - feac9dcdee299a44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;TrendingRepos.Repository&gt;, TrendingRepos.RepoError&gt;) -&gt; () in TrendingRepos.FetchTrendingRepositoriesUseCase.execute() -&gt; ()"
+                  moduleName = "TrendingRepos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laura/Documents/Laura/Dev/TrendingRepos/TrendingRepos/Domain/UseCases/RepositoriesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "4B73C6ED-8203-41FE-A681-3DBB2EE2B08F - feac9dcdee299a44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;TrendingRepos.Repository&gt;, TrendingRepos.RepoError&gt;) -&gt; () in TrendingRepos.FetchTrendingRepositoriesUseCase.execute() -&gt; ()"
+                  moduleName = "TrendingRepos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laura/Documents/Laura/Dev/TrendingRepos/TrendingRepos/Domain/UseCases/RepositoriesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "247">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D49519FD-F5E7-4CA9-B9F8-ABA91B1CC5DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendingRepos/Data/Network/Network.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "load(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
