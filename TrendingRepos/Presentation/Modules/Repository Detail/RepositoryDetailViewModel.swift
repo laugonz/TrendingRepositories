@@ -31,7 +31,4 @@ extension RepositoryDetailViewModel: RepositoryDetailViewModelProtocol {
         starsDidChange?(String(repository.stars))
         forksDidChange?(String(repository.forks))
     }
-
-    func viewDidAppear() {
-    }
 }

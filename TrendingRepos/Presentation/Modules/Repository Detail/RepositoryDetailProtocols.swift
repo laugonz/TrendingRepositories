@@ -10,7 +10,6 @@ import Foundation
 
 protocol RepositoryDetailViewModelProtocol {
     func viewReady()
-    func viewDidAppear()
 
     var nameDidChange: ((String) -> Void)? { get set }
     var descriptionDidChange: ((String) -> Void)? { get set }

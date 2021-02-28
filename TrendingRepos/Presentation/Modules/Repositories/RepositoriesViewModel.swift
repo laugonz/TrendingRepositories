@@ -57,9 +57,6 @@ extension RepositoriesViewModel: RepositoriesViewModelProtocol {
         fetchTrendingRepositories()
     }
 
-    func viewDidAppear() {
-    }
-
     func numberOfItems() -> Int {
         return repositoriesCellViewModel.count
     }

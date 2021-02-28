@@ -28,7 +28,6 @@ final class RepositoryDetailViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		viewModel.viewDidAppear()
     }
 
     private func setupBindings() {

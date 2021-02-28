@@ -10,7 +10,6 @@ import Foundation
 
 protocol RepositoriesViewModelProtocol {
     func viewReady()
-    func viewDidAppear()
 
     func numberOfItems() -> Int
     func viewModel(index: Int) -> RepositoryCellViewModel?

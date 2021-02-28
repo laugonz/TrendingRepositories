@@ -10,7 +10,6 @@ import Foundation
 
 protocol HomeViewModelProtocol {
     func viewReady()
-    func viewDidAppear()
     func didTapEnter()
 }
 

@@ -163,6 +163,7 @@
 		D3B1869425EBB5A70071BE55 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D3D9257125E68094009710EC /* Main.storyboard */,
 				D3D9257425E68096009710EC /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -375,7 +376,6 @@
 				D3B1869425EBB5A70071BE55 /* Resources */,
 				D3B1874D25EBE58E0071BE55 /* Guide Style */,
 				D3D9256F25E68094009710EC /* ViewController.swift */,
-				D3D9257125E68094009710EC /* Main.storyboard */,
 				D3D9257925E68096009710EC /* Info.plist */,
 			);
 			path = TrendingRepos;

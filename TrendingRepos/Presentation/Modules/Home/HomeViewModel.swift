@@ -22,9 +22,6 @@ extension HomeViewModel: HomeViewModelProtocol {
         // Called when view is loaded and ready
     }
 
-    func viewDidAppear() {
-    }
-
     func didTapEnter() {
         router.showRepositories()
     }
