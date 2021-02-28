@@ -54,7 +54,7 @@ class Button: UIButton {
 
     func configureStyle() {
         clipsToBounds = true
-        layer.cornerRadius = 4
+        layer.cornerRadius = frame.height / 2
 
         setTitleColor(normalTitleColor, for: .normal)
         setTitleColor(highlightedTitleColor, for: .highlighted)

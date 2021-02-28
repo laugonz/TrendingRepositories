@@ -63,6 +63,15 @@ class BodyRegularWhiteLabel: Label {
     }
 }
 
+class SubTextWhiteLabel: Label {
+
+    override func configureStyle() {
+        font = UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.regular)
+        textColor = UIColor.white.withAlphaComponent(0.75)
+    }
+}
+
+
 class BodyRegularDarkGreyLabel: Label {
 
     override func configureStyle() {

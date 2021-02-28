@@ -34,6 +34,7 @@ enum Colors: String {
     case red = "#FC644B"
     case orange = "#F48026"
     case darkGrey = "#4B5D72"
+    case blue = "#222A38"
 }
 
 extension Colors {

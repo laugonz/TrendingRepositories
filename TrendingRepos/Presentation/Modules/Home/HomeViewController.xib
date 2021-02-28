@@ -18,24 +18,74 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNn-Q3-n03" customClass="PrimaryRed" customModule="TrendingRepos" customModuleProvider="target">
-                    <rect key="frame" x="16" y="554" width="343" height="50"/>
+                    <rect key="frame" x="32" y="566" width="311" height="48"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="dPH-zL-1ov"/>
+                        <constraint firstAttribute="height" constant="48" id="dPH-zL-1ov"/>
                     </constraints>
                     <state key="normal" title="Enter the app"/>
                     <connections>
                         <action selector="enterButtonTapped:" destination="-1" eventType="touchUpInside" id="R60-t6-3gn"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6Vq-dr-2g7">
+                    <rect key="frame" x="137.5" y="62" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="5nO-eU-N9B"/>
+                        <constraint firstAttribute="height" constant="100" id="dFl-QL-9vA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROu-kV-Ply" customClass="BodyRegularWhiteLabel" customModule="TrendingRepos" customModuleProvider="target">
+                    <rect key="frame" x="16" y="214.5" width="343" height="101.5"/>
+                    <string key="text">iOS Test for Xapo bank 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Welcome to iOS Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv6-xY-Avz" customClass="H1WhiteLabel" customModule="TrendingRepos" customModuleProvider="target">
+                    <rect key="frame" x="17" y="178" width="341" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":gotoXapo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbh-6p-h1L" customClass="BodyBoldWhiteLabel" customModule="TrendingRepos" customModuleProvider="target">
+                    <rect key="frame" x="280.5" y="13" width="78.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":privacy terms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cj-kM-Cl0" customClass="SubTextWhiteLabel" customModule="TrendingRepos" customModuleProvider="target">
+                    <rect key="frame" x="16" y="630" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.16470588235294117" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kNn-Q3-n03" secondAttribute="bottom" constant="63" id="0oJ-ER-s0k"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kNn-Q3-n03" secondAttribute="trailing" constant="16" id="8OD-kB-u8V"/>
-                <constraint firstItem="kNn-Q3-n03" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AZU-8P-jrd"/>
+                <constraint firstItem="Xv6-xY-Avz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="1Qe-6E-hE3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9cj-kM-Cl0" secondAttribute="trailing" constant="16" id="4yY-tm-u4r"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kNn-Q3-n03" secondAttribute="trailing" constant="32" id="8OD-kB-u8V"/>
+                <constraint firstItem="kNn-Q3-n03" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="AZU-8P-jrd"/>
+                <constraint firstItem="ROu-kV-Ply" firstAttribute="top" secondItem="Xv6-xY-Avz" secondAttribute="bottom" constant="16" id="DCl-87-f1z"/>
+                <constraint firstItem="ROu-kV-Ply" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="FYP-db-ZY2"/>
+                <constraint firstItem="6Vq-dr-2g7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HbO-yF-TqQ"/>
+                <constraint firstItem="9cj-kM-Cl0" firstAttribute="top" secondItem="kNn-Q3-n03" secondAttribute="bottom" constant="16" id="cqX-Jp-nMe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xv6-xY-Avz" secondAttribute="trailing" constant="17" id="gaT-HI-DeY"/>
+                <constraint firstItem="Xv6-xY-Avz" firstAttribute="top" secondItem="6Vq-dr-2g7" secondAttribute="bottom" constant="16" id="iQb-Yb-zIp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xbh-6p-h1L" secondAttribute="trailing" constant="16" id="iVf-oO-ivb"/>
+                <constraint firstItem="6Vq-dr-2g7" firstAttribute="top" secondItem="xbh-6p-h1L" secondAttribute="bottom" constant="28" id="kCp-PO-pbQ"/>
+                <constraint firstItem="9cj-kM-Cl0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nn4-jR-lwZ"/>
+                <constraint firstItem="xbh-6p-h1L" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="q1A-8Y-qt0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ROu-kV-Ply" secondAttribute="trailing" constant="16" id="zuf-UO-Btl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9cj-kM-Cl0" secondAttribute="bottom" constant="16" id="zva-7M-gNg"/>
             </constraints>
             <point key="canvasLocation" x="-196" y="140"/>
         </view>
     </objects>
+    <resources>
+        <image name="ic_logo" width="101" height="101.5"/>
+    </resources>
 </document>
