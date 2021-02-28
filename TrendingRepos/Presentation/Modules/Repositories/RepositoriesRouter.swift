@@ -18,5 +18,8 @@ final class RepositoriesRouter {
 }
 
 extension RepositoriesRouter: RepositoriesRouterProtocol {
-
+    func showDetail(repository: Repository) {
+        let controller = RepositoryDetailBuilder().build(repository: repository)
+        viewController?.navigationController?.pushViewController(controller, animated: true)
+    }
 }

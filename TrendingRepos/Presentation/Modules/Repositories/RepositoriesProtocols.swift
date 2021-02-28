@@ -14,6 +14,7 @@ protocol RepositoriesViewModelProtocol {
 
     func numberOfItems() -> Int
     func viewModel(index: Int) -> RepositoryCellViewModel?
+    func didSelect(index: Int)
 
     var activityIndicatorDidChange: ((Bool) -> Void)? { get set }
     var repositoriesDidChange: (() -> Void)? { get set }
@@ -21,6 +22,7 @@ protocol RepositoriesViewModelProtocol {
 }
 
 protocol RepositoriesRouterProtocol {
+    func showDetail(repository: Repository)
 }
 
 protocol RepositoriesBuilderProtocol {

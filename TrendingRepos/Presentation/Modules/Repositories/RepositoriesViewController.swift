@@ -58,6 +58,6 @@ extension RepositoriesViewController: UITableViewDataSource, UITableViewDelegate
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //viewModel.didSelect(index: indexPath.row)
+        viewModel.didSelect(index: indexPath.row)
     }
 }

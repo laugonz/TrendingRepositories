@@ -38,7 +38,7 @@ final class RepositoriesViewModel {
             case .success(let repositories):
                 self.repositories = repositories
                 self.repositoriesCellViewModel = repositories.map {
-                    RepositoryCellViewModel(name: $0.owner + " " + $0.name,
+                    RepositoryCellViewModel(name: $0.owner + "/" + $0.name,
                                             stars: String($0.stars),
                                             forks: String($0.forks))
                 }
@@ -69,4 +69,11 @@ extension RepositoriesViewModel: RepositoriesViewModelProtocol {
 
         return repositoriesCellViewModel[index]
     }
+
+    func didSelect(index: Int) {
+        guard index < repositories.count else { return }
+
+        router.showDetail(repository: repositories[index])
+    }
+
 }

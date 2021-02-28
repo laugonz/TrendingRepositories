@@ -35,6 +35,12 @@
 		D3B1872A25EBD6470071BE55 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1872925EBD6470071BE55 /* ReusableView.swift */; };
 		D3B1872F25EBD6690071BE55 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1872E25EBD6690071BE55 /* NibLoadableView.swift */; };
 		D3B1873425EBDB4B0071BE55 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1873325EBDB4B0071BE55 /* UITableView+Reusable.swift */; };
+		D3B1874025EBDFD80071BE55 /* RepositoryDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1873925EBDFD80071BE55 /* RepositoryDetailRouter.swift */; };
+		D3B1874225EBDFD80071BE55 /* RepositoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1873B25EBDFD80071BE55 /* RepositoryDetailViewController.swift */; };
+		D3B1874325EBDFD80071BE55 /* RepositoryDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1873C25EBDFD80071BE55 /* RepositoryDetailProtocols.swift */; };
+		D3B1874425EBDFD80071BE55 /* RepositoryDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1873D25EBDFD80071BE55 /* RepositoryDetailBuilder.swift */; };
+		D3B1874525EBDFD80071BE55 /* RepositoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1873E25EBDFD80071BE55 /* RepositoryDetailViewModel.swift */; };
+		D3B1874625EBDFD80071BE55 /* RepositoryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B1873F25EBDFD80071BE55 /* RepositoryDetailViewController.xib */; };
 		D3D9256C25E68094009710EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256B25E68094009710EC /* AppDelegate.swift */; };
 		D3D9256E25E68094009710EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256D25E68094009710EC /* SceneDelegate.swift */; };
 		D3D9257025E68094009710EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256F25E68094009710EC /* ViewController.swift */; };
@@ -91,6 +97,12 @@
 		D3B1872925EBD6470071BE55 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		D3B1872E25EBD6690071BE55 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		D3B1873325EBDB4B0071BE55 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		D3B1873925EBDFD80071BE55 /* RepositoryDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailRouter.swift; sourceTree = "<group>"; };
+		D3B1873B25EBDFD80071BE55 /* RepositoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewController.swift; sourceTree = "<group>"; };
+		D3B1873C25EBDFD80071BE55 /* RepositoryDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailProtocols.swift; sourceTree = "<group>"; };
+		D3B1873D25EBDFD80071BE55 /* RepositoryDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailBuilder.swift; sourceTree = "<group>"; };
+		D3B1873E25EBDFD80071BE55 /* RepositoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewModel.swift; sourceTree = "<group>"; };
+		D3B1873F25EBDFD80071BE55 /* RepositoryDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryDetailViewController.xib; sourceTree = "<group>"; };
 		D3D9256825E68094009710EC /* TrendingRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D9256B25E68094009710EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D9256D25E68094009710EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +175,7 @@
 		D3B1869625EBB6360071BE55 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D3B1873825EBDFBF0071BE55 /* Repository Detail */,
 				D3B186BF25EBB80F0071BE55 /* Repositories */,
 				D3B1869E25EBB6D20071BE55 /* Home */,
 			);
@@ -301,6 +314,19 @@
 				D3B1872E25EBD6690071BE55 /* NibLoadableView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D3B1873825EBDFBF0071BE55 /* Repository Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1873F25EBDFD80071BE55 /* RepositoryDetailViewController.xib */,
+				D3B1873B25EBDFD80071BE55 /* RepositoryDetailViewController.swift */,
+				D3B1873E25EBDFD80071BE55 /* RepositoryDetailViewModel.swift */,
+				D3B1873925EBDFD80071BE55 /* RepositoryDetailRouter.swift */,
+				D3B1873C25EBDFD80071BE55 /* RepositoryDetailProtocols.swift */,
+				D3B1873D25EBDFD80071BE55 /* RepositoryDetailBuilder.swift */,
+			);
+			path = "Repository Detail";
 			sourceTree = "<group>";
 		};
 		D3D9255F25E68094009710EC = {
@@ -459,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B1874625EBDFD80071BE55 /* RepositoryDetailViewController.xib in Resources */,
 				D3D9257825E68096009710EC /* LaunchScreen.storyboard in Resources */,
 				D3D9257525E68096009710EC /* Assets.xcassets in Resources */,
 				D3B186CE25EBB8680071BE55 /* RepositoriesViewController.xib in Resources */,
@@ -500,12 +527,16 @@
 				D3B186AA25EBB6E30071BE55 /* HomeBuilder.swift in Sources */,
 				D3B186CB25EBB8680071BE55 /* RepositoriesProtocols.swift in Sources */,
 				D3B186C825EBB8680071BE55 /* RepositoriesRouter.swift in Sources */,
+				D3B1874025EBDFD80071BE55 /* RepositoryDetailRouter.swift in Sources */,
 				D3B186CD25EBB8680071BE55 /* RepositoriesViewModel.swift in Sources */,
 				D3B1872F25EBD6690071BE55 /* NibLoadableView.swift in Sources */,
 				D3B186F225EBC1CF0071BE55 /* RepositoryNetworkDTO.swift in Sources */,
 				D3B1870F25EBCE0A0071BE55 /* RepositoriesUseCase.swift in Sources */,
 				D3B186A925EBB6E30071BE55 /* HomeProtocols.swift in Sources */,
+				D3B1874325EBDFD80071BE55 /* RepositoryDetailProtocols.swift in Sources */,
+				D3B1874525EBDFD80071BE55 /* RepositoryDetailViewModel.swift in Sources */,
 				D3B186E225EBBED70071BE55 /* RepositoriesNetworkClient.swift in Sources */,
+				D3B1874225EBDFD80071BE55 /* RepositoryDetailViewController.swift in Sources */,
 				D3D9256E25E68094009710EC /* SceneDelegate.swift in Sources */,
 				D3B1870A25EBC62F0071BE55 /* Repository.swift in Sources */,
 				D3B186D625EBBB040071BE55 /* Network.swift in Sources */,
@@ -517,6 +548,7 @@
 				D3B186DC25EBBB520071BE55 /* URL+Parameter.swift in Sources */,
 				D3B1872025EBD60B0071BE55 /* RepositoryTableViewCell.swift in Sources */,
 				D3B1870525EBC5580071BE55 /* RepositoriesRepository.swift in Sources */,
+				D3B1874425EBDFD80071BE55 /* RepositoryDetailBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
