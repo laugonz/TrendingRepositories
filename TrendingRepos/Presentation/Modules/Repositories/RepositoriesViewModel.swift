@@ -19,7 +19,7 @@ final class RepositoriesViewModel {
     var errorDidChange: ((String) -> Void)?
 
     private var repositories = [Repository]()
-    private var repositoriesCellViewModel = [RepositoryCellViewModel]()
+    var repositoriesCellViewModel = [RepositoryCellViewModel]()
 
 
     required init(router: RepositoriesRouterProtocol, fetchTrendingRepositoriesUseCase: FetchTrendingRepositoriesUseCaseProtocol) {

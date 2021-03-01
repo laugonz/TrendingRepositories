@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class RepositoriesViewController: UIViewController {
+class RepositoriesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -34,7 +34,7 @@ final class RepositoriesViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
     }
 
-    private func setupBindings() {
+    func setupBindings() {
         viewModel.repositoriesDidChange = { [weak self] in
             DispatchQueue.main.async {
                 self?.errorLabel.isHidden = true
