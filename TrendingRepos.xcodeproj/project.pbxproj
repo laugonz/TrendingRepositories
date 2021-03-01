@@ -48,6 +48,8 @@
 		D3B1878325EC1B820071BE55 /* NSAttributedString+Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1878225EC1B820071BE55 /* NSAttributedString+Links.swift */; };
 		D3B1878825EC20330071BE55 /* NavigationBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1878725EC20330071BE55 /* NavigationBarAppearance.swift */; };
 		D3B187BD25ECD2330071BE55 /* RepositoriesNetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B187BC25ECD2330071BE55 /* RepositoriesNetworkClientTests.swift */; };
+		D3B187D325ECD55F0071BE55 /* RepositoriesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B187D225ECD55F0071BE55 /* RepositoriesUseCaseTests.swift */; };
+		D3B187DC25ECD6620071BE55 /* RepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B187DB25ECD6620071BE55 /* RepositoryMock.swift */; };
 		D3D9256C25E68094009710EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256B25E68094009710EC /* AppDelegate.swift */; };
 		D3D9256E25E68094009710EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256D25E68094009710EC /* SceneDelegate.swift */; };
 		D3D9257025E68094009710EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9256F25E68094009710EC /* ViewController.swift */; };
@@ -117,6 +119,8 @@
 		D3B1878225EC1B820071BE55 /* NSAttributedString+Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Links.swift"; sourceTree = "<group>"; };
 		D3B1878725EC20330071BE55 /* NavigationBarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearance.swift; sourceTree = "<group>"; };
 		D3B187BC25ECD2330071BE55 /* RepositoriesNetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesNetworkClientTests.swift; sourceTree = "<group>"; };
+		D3B187D225ECD55F0071BE55 /* RepositoriesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesUseCaseTests.swift; sourceTree = "<group>"; };
+		D3B187DB25ECD6620071BE55 /* RepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryMock.swift; sourceTree = "<group>"; };
 		D3D9256825E68094009710EC /* TrendingRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D9256B25E68094009710EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D9256D25E68094009710EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -373,6 +377,30 @@
 			path = "Network Clients";
 			sourceTree = "<group>";
 		};
+		D3B187D025ECD5320071BE55 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D3B187D125ECD5370071BE55 /* Use cases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D3B187D125ECD5370071BE55 /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+				D3B187D225ECD55F0071BE55 /* RepositoriesUseCaseTests.swift */,
+			);
+			path = "Use cases";
+			sourceTree = "<group>";
+		};
+		D3B187DA25ECD6570071BE55 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				D3B187DB25ECD6620071BE55 /* RepositoryMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		D3D9255F25E68094009710EC = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +439,8 @@
 		D3D9258125E68097009710EC /* TrendingReposTests */ = {
 			isa = PBXGroup;
 			children = (
+				D3B187DA25ECD6570071BE55 /* Mock */,
+				D3B187D025ECD5320071BE55 /* Domain */,
 				D3B187BA25ECD1F90071BE55 /* Data */,
 				D3D9258225E68097009710EC /* TrendingReposTests.swift */,
 				D3D9258425E68097009710EC /* Info.plist */,
@@ -608,7 +638,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D9258325E68097009710EC /* TrendingReposTests.swift in Sources */,
+				D3B187DC25ECD6620071BE55 /* RepositoryMock.swift in Sources */,
 				D3B187BD25ECD2330071BE55 /* RepositoriesNetworkClientTests.swift in Sources */,
+				D3B187D325ECD55F0071BE55 /* RepositoriesUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
